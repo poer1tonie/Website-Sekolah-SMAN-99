@@ -1,0 +1,424 @@
+/* Custom Styles */ 
+
+
+/* Header Info Section */
+.header-info {
+    background-color: #320CCC; /* Warna biru tua atau ungu */
+    font-size: 0.9rem;
+}
+
+.header-info img {
+    filter: invert(100%); /* Membuat icon menjadi putih */
+}
+
+.header-info a {
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+.header-info a:hover {
+    color: #ffdd00; /* Warna hover kuning */
+}
+
+
+.carousel-caption h5 {
+    font-size: 2rem;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+}
+
+.carousel-caption p {
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+}
+
+
+/* Navbar styles */
+ .navbar {
+    background-color: white; /* Warna latar belakang navbar */
+}
+
+.nav-link {
+    color: blue; /* Warna teks item navigasi */
+    transition: background-color 0.3s; /* Animasi transisi */
+
+}
+
+/* Gaya saat hover */
+.nav-link:hover {
+    background-color: darkblue; /* Warna saat hover */
+}
+
+/* Gaya saat dikunjungi */
+.nav-link:visited {
+    background-color: lightblue; /* Warna saat link sudah dikunjungi */
+}
+
+/* Gaya saat link diklik (aktif) */
+.nav-item { 
+     margin-right: 15px; /* Jarak antar link */
+}
+
+.nav-item.active .nav-link {
+    background-color: deepskyblue; /* Warna saat aktif */
+}
+
+/* Untuk mengatur active state */
+.nav-link.active {
+    background-color: deepskyblue; /* Warna saat item aktif */
+}
+
+/* Menambahkan efek ketika link di-click */
+.nav-link:focus, .nav-link:active {
+    background-color: deepskyblue; /* Warna saat diklik */
+}
+
+
+.navbar-toggler {
+    border-color: #ffffff;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffffff' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%280, 123, 255, 1%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+
+/* Slideshow Section */
+  
+
+/* Sticky Navbar */
+navbar.sticky-top {
+    position: sticky;
+    top: 0;
+    z-index: 1030; /* Tetap di atas elemen lain */
+}
+
+.navbar.scrolled {
+    background-color: #0056b3; /* Warna navbar berubah saat di-scroll */
+    transition: background-color 0.3s ease;
+}
+
+.main-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+
+
+
+.container.my-4 {
+    margin-top: 40px;  /* Margin atas */
+    margin-bottom: 40px;  /* Margin bawah */
+    margin-left: auto;  /* Margin kiri otomatis (berfungsi untuk menyeimbangkan) */
+    margin-right: auto;  /* Margin kanan otomatis (berfungsi untuk menyeimbangkan) */
+}
+  
+
+.kontenutama {
+    background-color: rgb(224, 224, 210);
+    padding: 30px 20px;
+    text-align: center;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+
+/* Menghilangkan border pada list-group-item */
+.list-group-item {
+    border: none; /* Hilangkan border */ 
+    padding-left: 30px; /* Hilangkan padding kiri untuk menyesuaikan ikon */
+    display: flex; /* Atur ikon dan teks dalam satu baris */
+    align-items: center; /* Selaraskan ikon dan teks secara vertikal */
+}
+
+/* Style untuk ikon */
+.list-group-item i {
+    margin-right: 10px; /* Jarak antara ikon dan teks */
+    font-size: 1.2rem; /* Ukuran ikon */
+    color: #007bff; /* Warna ikon */
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+    .grid-item {
+        margin-bottom: 15px; /* Kurangi jarak bawah di layar kecil */
+        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1); /* Shadow lebih kecil di layar kecil */
+    }
+}
+
+
+
+/* Mengatur gambar menjadi lingkaran dan menyesuaikan ukurannya */
+.school-head-image {
+    width: 150px;  /* Ukuran gambar */
+    height: 150px; /* Ukuran tinggi sama agar menjadi lingkaran */
+    object-fit: cover; /* Menjaga gambar tetap terpusat dan tidak terdistorsi */
+    border-radius: 50%; /* Membuat gambar berbentuk lingkaran */
+    margin-bottom: 15px; /* Memberikan jarak bawah pada gambar */
+    display: block;
+    margin-left: auto;
+    margin-right: auto; /* Center gambar */
+}
+ 
+/* Mengatur iframe map agar responsif */
+ /* CSS untuk membuat map responsive */
+.map-container {
+    position: relative;
+    padding-bottom: 56.25%; /* Rasio aspek 16:9 */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #f0f0f0; /* Bisa diubah ke warna lain */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: 8px; /* Membuat peta lebih rapi */
+}
+
+/* card Styles */ 
+
+  .card {
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+        }
+         
+        .card-body {
+            padding-top: 15px;
+        }
+
+       
+        .card-title {
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .card-text {
+            font-size: 13px;
+            margin-bottom: 0;
+        }
+        
+
+        .card-img-top {
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            padding: 10px; /* Padding antara gambar dan tepi */
+        }
+
+        .card-img-top1 {
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            padding: 10px;
+            cursor: pointer;
+            object-fit: cover; /* Mengatur gambar agar sesuai dengan card */
+            width: 180px; /* Mengatur lebar gambar */
+            height: 200px; /* Mengatur tinggi gambar */
+            margin: 0 auto; /* Membuat gambar berada di tengah */
+        }
+
+         .email {
+            font-size: 12px;
+            margin-top: 5px;
+        }
+        .email i {
+            margin-right: 5px;
+        }
+
+/* Footer Styles */
+footer {
+    background-color: #1e40af; /* Warna biru */
+}
+
+footer h5 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+footer ul {
+    padding-left: 0;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+footer ul li i {
+    margin-right: 10px;
+    color: #ffffff;
+}
+
+footer a.text-white {
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a.text-white:hover {
+    color: #ffdd00; /* Warna hover */
+}
+
+footer .social-icons a {
+    color: #ffffff;
+}
+
+footer .social-icons a:hover {
+    color: #ffdd00; /* Warna hover */
+}
+
+footer .social-icons i {
+    margin-right: 15px;
+    font-size: 24px;
+}
+
+footer .border-white {
+    border-color: rgba(255, 255, 255, 0.2);
+}
+ 
+/* Responsive Footer */
+@media (max-width: 768px) {
+    footer .col-md-4 {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    
+    footer .social-icons {
+        margin-top: 15px;
+    }
+}
+
+@media (min-width: 992px) {
+    footer {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+@media (max-width: 576px) {
+    footer .col-12 {
+        text-align: center;
+    }
+    
+    footer h5 {
+        font-size: 16px;
+    }
+}
+
+
+/* Style for Go to Top Button */ 
+        #goTopBtn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: none;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 50%;
+        }
+
+        #goTopBtn:hover {
+            background-color: #555;
+        }
+
+        /* Style untuk link di bagian footer */
+.link-style {
+    color: #ffffff; /* Warna teks */
+    text-decoration: none; /* Hilangkan underline default */
+    transition: color 0.3s ease-in-out, text-decoration 0.3s ease-in-out; /* Tambahkan efek transisi */
+}
+
+.link-style:hover {
+    color: #ffdd00; /* Warna teks saat hover */
+    text-decoration: underline; /* Tambahkan underline saat hover */
+}
+
+
+
+.social-icons i {
+    font-size: 1.2rem;
+}
+
+
+/* Style untuk <h4> pada kolom sambutan */
+.konten-title {
+    background-color: #007bff; /* Biru sesuai tema */
+    color: #ffffff; /* Warna teks putih */
+    padding: 10px; /* Ruang dalam */
+    border-radius: 5px; /* Sedikit rounded pada sudut */
+    text-align: center; /* Teks di tengah */
+    margin-bottom: 20px; /* Jarak bawah */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan pada judul */
+}
+
+/* Style untuk container sambutan agar tampil seperti landing page */
+.konten-container {
+    background-image: url('images/landing-bg.jpg'); /* Gambar background */
+    background-size: cover; /* Sesuaikan ukuran background */
+    background-position: center; /* Posisi background di tengah */
+    padding: 20px; /* Tambah ruang dalam */
+    border-radius: 10px; /* Rounded sudut */
+    color: #333; /* Warna teks */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Bayangan pada container */
+}
+
+/* Style untuk gambar kepala sekolah */
+.school-head-image {
+    border: 5px solid #ffffff; /* Tambah border putih */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan pada gambar */
+    max-width: 150px; /* Ukuran maksimal gambar */
+    margin-bottom: 15px; /* Jarak bawah gambar */
+}
+
+ 
+
+/* Responsive untuk sambutan pada mobile */
+@media (max-width: 768px) {
+    .konten-container {
+        text-align: center; /* Teks di tengah untuk mobile */
+        padding: 15px; /* Kurangi padding pada mobile */
+    }
+    .school-head-image {
+        max-width: 120px; /* Ukuran gambar lebih kecil di mobile */
+    }
+} 
+
+/* Untuk layar besar */ 
+@media (min-width: 1200px) {
+    main.container {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+}
+
+/* Untuk layar sedang (tablet) */
+@media (max-width: 1199.98px) and (min-width: 768px) {
+    main.container {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+}
+
+/* Untuk layar kecil (mobile) */
+@media (max-width: 767.98px) {
+    main.container {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+
